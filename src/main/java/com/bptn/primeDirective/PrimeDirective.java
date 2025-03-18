@@ -79,6 +79,25 @@ public class PrimeDirective {
 
 		return oddNumbers;
 	}
+	
+	//method to return first primes in an ArrayList
+	
+	public ArrayList<Integer> firstPrimes(int[] nums) {
+		
+		
+		ArrayList<Integer> primeNums = new ArrayList<Integer>();
+		
+		for (int num : nums) {
+			
+			if (isPrime(num)) {
+				primeNums.add(num);
+				
+				primeNums.get(0);
+			}
+		}
+		
+		return primeNums;
+	}
 
 	public static void main(String[] args) {
 
@@ -86,7 +105,7 @@ public class PrimeDirective {
 
 		int[] nums = { 6, 29, 28, 33, 11, 100, 101, 43, 89 };
 
-		System.out.println(numTest.filterOdd(nums));
+		System.out.println(numTest.onlyPrimes(nums));
 
 	}
 
